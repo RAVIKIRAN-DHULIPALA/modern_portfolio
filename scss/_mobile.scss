@@ -57,8 +57,17 @@
       "tech"
       "tech1"
       "tech2"
-      "tech3";
+      "tech3"
+      "tech-4";
     grid-template-columns: 1fr;
+    .techa {
+      .prog {
+        margin-left: -30px;
+        img {
+          margin: 10px 0 0 15px;
+        }
+      }
+    }
   }
 
   .projects {

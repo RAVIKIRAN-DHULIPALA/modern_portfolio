@@ -71,7 +71,8 @@ main {
     "type type type"
     "study1 study2 study3"
     "tech tech tech"
-    "tech1 tech2 tech3";
+    "tech1 tech2 tech3"
+    ". tech-4 ..";
   grid-template-columns: repeat(3, 1fr);
 
   .bio-image {
@@ -99,10 +100,16 @@ main {
     grid-area: study3;
   }
   .study,
-  .techa {
+  .techa,
+  .tech-4 {
     background: lighten($color: $primary-color, $amount: 5);
     padding: 0.5rem;
     border-bottom: $primary 5px solid;
+    .prog {
+      img {
+        margin: 10px 0 0 30px;
+      }
+    }
   }
   .course {
     align-items: center;
@@ -130,6 +137,9 @@ main {
   }
   .tech3 {
     grid-area: tech3;
+  }
+  .tech-4 {
+    grid-area: tech-4;
   }
 }
 
