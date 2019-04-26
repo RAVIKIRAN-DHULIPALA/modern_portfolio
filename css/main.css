@@ -160,7 +160,7 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bioimage bio bio" "study1 study2 study3";
+  grid-template-areas: "bioimage bio bio" "type type type" "study1 study2 study3" "tech tech tech" "tech1 tech2 tech3";
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
@@ -169,17 +169,43 @@ main {
     border: #eece1a 3px solid; }
   .about-info .bio {
     grid-area: bio;
-    font-size: 1.5rem; }
+    font-size: 1.25rem; }
+  .about-info .type {
+    grid-area: type;
+    font-size: 1.5rem;
+    text-align: center; }
   .about-info .study1 {
     grid-area: study1; }
   .about-info .study2 {
     grid-area: study2; }
   .about-info .study3 {
     grid-area: study3; }
-  .about-info .study {
+  .about-info .study,
+  .about-info .techa {
     background: #515151;
     padding: 0.5rem;
     border-bottom: #eece1a 5px solid; }
+  .about-info .course {
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem; }
+  .about-info .school,
+  .about-info .yop,
+  .about-info .gpa {
+    align-items: center;
+    text-align: justify;
+    text-align-last: center;
+    font-size: 1rem; }
+  .about-info .tech {
+    grid-area: tech;
+    font-size: 1.5rem;
+    text-align: center; }
+  .about-info .tech1 {
+    grid-area: tech1; }
+  .about-info .tech2 {
+    grid-area: tech2; }
+  .about-info .tech3 {
+    grid-area: tech3; }
 
 .projects {
   display: grid;
@@ -211,6 +237,10 @@ main {
       color: #000; }
       .boxes div:hover span {
         color: #000; }
+      .boxes div:hover a {
+        color: #000; }
+    .boxes div a {
+      color: #fff; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
@@ -273,7 +303,7 @@ main {
       width: 150px;
       height: 150px; }
   .about-info {
-    grid-template-areas: "bioimage" "bio" "study1" "study2" "study3";
+    grid-template-areas: "bioimage" "bio" "type" "study1" "study2" "study3" "tech" "tech1" "tech2" "tech3";
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
