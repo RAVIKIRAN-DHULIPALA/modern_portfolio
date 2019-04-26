@@ -160,7 +160,7 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bioimage bio bio" "type type type" "study1 study2 study3" "tech tech tech" "tech1 tech2 tech3" ". tech-4 ..";
+  grid-template-areas: "bioimage bio bio" "type type type" "study1 study2 study3" "tech tech tech" "tech1 tech2 tech3";
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
@@ -181,14 +181,12 @@ main {
   .about-info .study3 {
     grid-area: study3; }
   .about-info .study,
-  .about-info .techa,
-  .about-info .tech-4 {
+  .about-info .techa {
     background: #515151;
     padding: 0.5rem;
     border-bottom: #eece1a 5px solid; }
     .about-info .study .prog img,
-    .about-info .techa .prog img,
-    .about-info .tech-4 .prog img {
+    .about-info .techa .prog img {
       margin: 10px 0 0 30px; }
   .about-info .course {
     align-items: center;
@@ -211,8 +209,6 @@ main {
     grid-area: tech2; }
   .about-info .tech3 {
     grid-area: tech3; }
-  .about-info .tech-4 {
-    grid-area: tech-4; }
 
 .projects {
   display: grid;
@@ -310,7 +306,7 @@ main {
       width: 150px;
       height: 150px; }
   .about-info {
-    grid-template-areas: "bioimage" "bio" "type" "study1" "study2" "study3" "tech" "tech1" "tech2" "tech3" "tech-4";
+    grid-template-areas: "bioimage" "bio" "type" "study1" "study2" "study3" "tech" "tech1" "tech2" "tech3";
     grid-template-columns: 1fr; }
     .about-info .techa .prog {
       margin-left: -30px; }
