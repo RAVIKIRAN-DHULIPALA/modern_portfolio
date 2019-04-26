@@ -40,6 +40,7 @@
     height: 25vh;
     transform: translate3d(100%, 0, 0);
     .portrait {
+      background: url(../img/profile-pic-small.jpg);
       width: 150px;
       height: 150px;
     }
@@ -49,9 +50,14 @@
     grid-template-areas:
       "bioimage"
       "bio"
+      "type"
       "study1"
       "study2"
-      "study3";
+      "study3"
+      "tech"
+      "tech1"
+      "tech2"
+      "tech3";
     grid-template-columns: 1fr;
   }
 

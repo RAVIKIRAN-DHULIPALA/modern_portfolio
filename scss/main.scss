@@ -68,7 +68,10 @@ main {
   grid-gap: 30px;
   grid-template-areas:
     "bioimage bio bio"
-    "study1 study2 study3";
+    "type type type"
+    "study1 study2 study3"
+    "tech tech tech"
+    "tech1 tech2 tech3";
   grid-template-columns: repeat(3, 1fr);
 
   .bio-image {
@@ -79,7 +82,12 @@ main {
   }
   .bio {
     grid-area: bio;
+    font-size: 1.25rem;
+  }
+  .type {
+    grid-area: type;
     font-size: 1.5rem;
+    text-align: center;
   }
   .study1 {
     grid-area: study1;
@@ -90,11 +98,38 @@ main {
   .study3 {
     grid-area: study3;
   }
-
-  .study {
+  .study,
+  .techa {
     background: lighten($color: $primary-color, $amount: 5);
     padding: 0.5rem;
     border-bottom: $primary 5px solid;
+  }
+  .course {
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .school,
+  .yop,
+  .gpa {
+    align-items: center;
+    text-align: justify;
+    text-align-last: center;
+    font-size: 1rem;
+  }
+  .tech {
+    grid-area: tech;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .tech1 {
+    grid-area: tech1;
+  }
+  .tech2 {
+    grid-area: tech2;
+  }
+  .tech3 {
+    grid-area: tech3;
   }
 }
 
@@ -138,6 +173,12 @@ main {
       span {
         color: set-text-color($primary);
       }
+      a {
+        color: #000;
+      }
+    }
+    a {
+      color: #fff;
     }
   }
 }
