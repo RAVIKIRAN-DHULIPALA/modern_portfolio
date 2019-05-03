@@ -291,26 +291,26 @@ main {
   height: 60px; }
   #main-footer .footer__heart {
     background-color: #dd2e44;
-    height: 0.6rem;
-    width: 0.6rem;
+    height: 0.9rem;
+    width: 0.9rem;
     position: relative;
     transform: rotate(-45deg);
     animation: heartbeat 1s infinite;
     display: inline-block;
-    margin: 0 1rem; }
+    margin: 0 1.5rem; }
     #main-footer .footer__heart:after, #main-footer .footer__heart:before {
       content: "";
       position: absolute;
       background: #dd2e44;
-      width: 0.6rem;
-      height: 0.6rem;
+      width: 0.9rem;
+      height: 0.9rem;
       border-radius: 100%; }
     #main-footer .footer__heart:before {
-      top: -0.4rem;
+      top: -0.5rem;
       left: 0; }
     #main-footer .footer__heart:after {
       top: 0;
-      right: -0.4rem; }
+      right: -0.5rem; }
 
 @keyframes heartbeat {
   0% {
