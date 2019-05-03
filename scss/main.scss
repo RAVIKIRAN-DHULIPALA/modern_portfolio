@@ -4,14 +4,19 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   @include background;
   background: $primary-color;
   color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.5;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
 }
 // headings
 h1,
@@ -21,6 +26,7 @@ h3 {
   font-weight: 400;
   &.lg-heading {
     font-size: 6rem;
+    font-weight: 550;
   }
   &.sm-heading {
     margin-bottom: 2rem;
@@ -103,7 +109,11 @@ main {
     background: lighten($color: $primary-color, $amount: 5);
     padding: 0.5rem;
     border-bottom: $primary 5px solid;
+    border-radius: 15px;
     .prog {
+      p {
+        font-family: "Montserrat", sans-serif;
+      }
       img {
         margin: 10px 0 0 30px;
       }
@@ -135,6 +145,18 @@ main {
   }
   .tech3 {
     grid-area: tech3;
+  }
+  ::selection {
+    color: #000;
+    background: #fff;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: #fff;
   }
 }
 
@@ -219,6 +241,47 @@ main {
   background: darken($color: $primary-color, $amount: 10);
   color: set-text-color($primary-color);
   height: 60px;
+
+  .footer__heart {
+    background-color: #dd2e44;
+    height: 0.6rem;
+    width: 0.6rem;
+    position: relative;
+    transform: rotate(-45deg);
+    animation: heartbeat 1s infinite;
+    display: inline-block;
+    margin: 0 1rem;
+
+    &:after,
+    &:before {
+      content: "";
+      position: absolute;
+      background: #dd2e44;
+      width: 0.6rem;
+      height: 0.6rem;
+      border-radius: 100%;
+    }
+    &:before {
+      top: -0.4rem;
+      left: 0;
+    }
+    &:after {
+      top: 0;
+      right: -0.4rem;
+    }
+
+    @keyframes heartbeat {
+      0% {
+        transform: scale(1) rotate(-45deg);
+      }
+      20% {
+        transform: scale(1.25) rotate(-45deg);
+      }
+      40% {
+        transform: scale(1.5) rotate(-45deg);
+      }
+    }
+  }
 }
 
 @import "mobile";

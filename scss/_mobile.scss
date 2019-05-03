@@ -62,6 +62,9 @@
     .techa {
       .prog {
         margin-left: -30px;
+        p {
+          margin-left: 30px;
+        }
         img {
           margin: 10px 0 0 15px;
         }
@@ -83,7 +86,7 @@
 
     .lg-heading {
       margin-top: 1rem;
-      font-size: 5rem;
+      font-size: 4rem;
     }
   }
   .projects {
