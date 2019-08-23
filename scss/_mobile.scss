@@ -13,12 +13,16 @@
 @include mediaMd {
   main {
     align-items: center;
-    text-align: center;
+    text-align: inherit;
     .lg-heading {
       line-height: 1;
       margin-bottom: 1rem;
-      font-size: 4rem;
+      font-size: 3.5rem;
       text-align: center;
+    }
+    .lg-heading1 {
+      font-size: 2.5rem;
+      line-height: 2.5;
     }
   }
 
@@ -51,21 +55,33 @@
       "bioimage"
       "bio"
       "type"
-      "study1"
-      "study2"
-      "study3"
-      "tech"
+      "myimg"
+      "myimg"
+      "skill"
+      "myimg1"
+      "myimg1"
       "tech1"
       "tech2"
       "tech3";
     grid-template-columns: 1fr;
+    .type {
+      .title {
+        font-size: 2.5rem;
+      }
+    }
+    .myimg,.myimg1 {
+      width: 20rem;
+      height: 25rem;
+      margin-left: -0.75rem;
+    }
     .techa {
       .prog {
         margin-left: -30px;
         p {
           margin-left: 30px;
         }
-        img {
+        img,
+        svg {
           margin: 10px 0 0 30px;
         }
       }
@@ -85,11 +101,18 @@
     }
 
     .lg-heading {
-      margin-top: 1rem;
-      font-size: 4rem;
+      margin-top: 2rem;
+      font-size: 3.5rem;
     }
   }
   .about-info {
+    .type {
+      .myimg ,.myimg1{
+        width: 20rem;
+        height: 25rem;
+        margin-left: -10rem;
+      }
+    }
     .techa {
       .prog {
         margin-left: -30px;

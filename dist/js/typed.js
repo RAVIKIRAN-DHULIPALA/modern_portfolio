@@ -17,6 +17,16 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+  new Typed("#typed3", {
+    stringsElement: "#typed-strings",
+    typeSpeed: 50,
+    backSpeed: 50,
+    smartBackspace: true,
+    loop: true
+  });
+});
+
 function prettyLog(str) {
   console.log("%c " + str, "color: green; font-weight: bold;");
 }
